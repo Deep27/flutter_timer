@@ -1,0 +1,4 @@
+class Ticker {
+  Stream<int> tick({int ticks}) =>
+      Stream.periodic(Duration(seconds: 1), (x) => ticks - x - 1);
+}
